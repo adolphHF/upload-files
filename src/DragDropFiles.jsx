@@ -52,7 +52,7 @@ const DragDropFiles = () => {
             multiple
             onChange={(event) => setFiles(event.target.files)}
             hidden
-            accept="image/png, image/jpeg"
+            accept="image/png, image/jpeg, video/mp4, application/pdf"
             ref={inputRef}
           />
           <button onClick={() => inputRef.current.click()}>Select Files</button>
