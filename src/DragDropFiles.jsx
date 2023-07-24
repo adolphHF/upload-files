@@ -24,6 +24,7 @@ const DragDropFiles = () => {
     //     body: formData
     //   }  
     // )
+    // here use the link of our server, 'cause we are using an ftp server, we need to use filezilla to upload files
   };
 
   if (files) return (
