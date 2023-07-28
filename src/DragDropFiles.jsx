@@ -18,6 +18,12 @@ const DragDropFiles = () => {
     const formData = new FormData();
     formData.append("Files", files);
     console.log(formData.getAll())
+    fetch ( 'upload.php', { method: 'POST', body: formData}).
+      then( rta => rta.json() ).
+      then( json => {
+        console.log( json );
+      }).
+      catch (e => {console.error(e); } );
     // fetch(
     //   "link", {
     //     method: "POST",
